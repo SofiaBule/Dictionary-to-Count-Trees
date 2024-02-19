@@ -1,0 +1,13 @@
+def count_trees(forest):
+    tree_count = {}
+    for tree in forest:
+        if tree in tree_count:
+            tree_count[tree] += 1
+        else:
+            tree_count[tree] = 1
+    return tree_count
+
+# Example usage:
+forest = ["oak", "pine", "oak", "maple", "birch", "oak"]
+tree_counts = count_trees(forest)
+print("Tree counts in the forest:", tree_counts)
